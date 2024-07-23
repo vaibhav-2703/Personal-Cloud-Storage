@@ -9,7 +9,9 @@
 ## Steps
 
 1. **Install Ubuntu Server**:
-   - Boot from the Ubuntu Server ISO and follow the installation instructions (Make sure to set a static ip while installing Ubuntu Server).
+   - Boot from the Ubuntu Server ISO and follow the installation instructions.
+      - Make sure to setup static ip to your ubuntu server.
+      - Do install OpenSSH for easy remote access. 
 
 2. **Update Packages**:
    ```bash
@@ -52,35 +54,35 @@ sudo apt install libmagickcore-6.q16-6-extra php php-apcu php-bcmath php-cli php
 ```bash
 sudo apt install unzip
 unzip latest.zip
-mv nextcloud nc.learnlinux.tv
-sudo chown -R www-data:www-data nc.learnlinux.tv
-sudo mv nc.learnlinux.tv /var/www/
+mv nextcloud nextcloud
+sudo chown -R www-data:www-data "hostname"
+sudo mv nextcloud /var/www/
 sudo a2dissite 000-default.conf
 ```
 - Create Apache Config for Nextcloud:
 ```bash
-sudo nano /etc/apache2/sites-available/nc.learnlinux.tv.conf
+sudo nano /etc/apache2/sites-available/nextcloud.conf
 ```
 Add the following content:
 ```apache
 <VirtualHost *:80>
-    DocumentRoot "/var/www/nc.learnlinux.tv"
-    ServerName nc.learnlinux.tv
+    DocumentRoot "/var/www/nextcloud"
+    ServerName nextcloud.yourdomain.com
 
-    <Directory "/var/www/nc.learnlinux.tv/">
+    <Directory "/var/www/nextcloud/">
         Options MultiViews FollowSymlinks
         AllowOverride All
         Order allow,deny
         Allow from all
    </Directory>
 
-   TransferLog /var/log/apache2/nc.learnlinux.tv_access.log
-   ErrorLog /var/log/apache2/nc.learnlinux.tv_error.log
+   TransferLog /var/log/apache2/nextcloud_access.log
+   ErrorLog /var/log/apache2/nextcloud_error.log
 </VirtualHost>
 ```
 - Enable Site and Modules:
 ```bash
-sudo a2ensite nc.learnlinux.tv.conf
+sudo a2ensite nextcloud.conf
 sudo a2enmod dir env headers mime rewrite ssl
 sudo systemctl restart apache2
 ```
