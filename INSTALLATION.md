@@ -166,4 +166,4 @@ opcache.revalidate_freq=1
   - Follow the TrueNAS documentation for installation and configuration.
 ## Troubleshooting
 
-For troubleshooting tips, refer to the [STATUS.md](./STATUS.md).
+For troubleshooting tips, refer to the [STATUS.md](https://github.com/vaibhav-2703/Personal-Cloud-Storage/blob/main/STATUS.md).
