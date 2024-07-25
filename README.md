@@ -49,7 +49,6 @@ Potential future improvements include further performance optimization and explo
 
 For detailed setup instructions, refer to:
 - [INSTALLATION.md](INSTALLATION.md)
-- [CONFIGURATION.md](CONFIGURATION.md)
 
 ## Contributing
 
