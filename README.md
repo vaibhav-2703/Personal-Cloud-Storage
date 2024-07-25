@@ -53,7 +53,7 @@ For detailed setup instructions, refer to:
 
 ## Contributing
 
-Interested in contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Interested in contributing? See [CONTRIBUTION.md](CONTRIBUTION.md) for guidelines.
 
 ## Project Status
 
