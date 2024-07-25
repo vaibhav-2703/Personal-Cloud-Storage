@@ -51,10 +51,6 @@ For detailed setup instructions, refer to:
 - [INSTALLATION.md](INSTALLATION.md)
 - [CONFIGURATION.md](CONFIGURATION.md)
 
-## Usage Instructions
-
-Refer to [USAGE.md](USAGE.md) for information on how to use and test the cloud storage server.
-
 ## Contributing
 
 Interested in contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
