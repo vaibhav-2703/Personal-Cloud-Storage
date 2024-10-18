@@ -3,7 +3,7 @@
 ## Current Status
 
 - **Completed**: Initial setup, Cloudflare Tunnel integration, Docker and TrueNAS configuration.
-- **In Progress**: Performance optimization and additional feature exploration.
+- **In Progress**: Looking for Reliable Disaster Recovery Management.
 
 ## Known Issues
 
